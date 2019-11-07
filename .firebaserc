@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "fir-jutaku",
+    "firebase-jutaku": "fir-jutaku"
+  }
+}

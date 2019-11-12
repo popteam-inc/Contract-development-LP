@@ -27,7 +27,7 @@ body {
 }
 
 .sect--grey {
-  /* background-color: #ebeff9; */
+  /*background-color: #ebeff9;*/
 }
 
 .sect--violet {
@@ -43,7 +43,7 @@ body {
 }
 
 .sect--white {
-  /* background-color:#fff; */
+  /* background-color:#fff;*/
 }
 .row--center {
   max-width: 1000px;
@@ -51,7 +51,6 @@ body {
 }
 .row--margin {
   margin-top: 45px;
-
 }
 
 .row__title {
@@ -71,21 +70,11 @@ body {
 
 .price-box {
   padding: 0px 25px;
-  height: ;
 }
 
-.clearfix:after{
-  content: "";
-  clear: both;
-  display: block;
+.price-box p {
+  margin-top: 30px;
 }
-
-.parents {
-  display: -webkit-flex;
-   /* display: flex; */
-   display: ;
-}
-
 .price-box__wrap {
   background-color: #fff;
   border-radius: 6px;
@@ -132,6 +121,7 @@ body {
 
 .price-box__people {
   font-size: 12px;
+  color: #8198ae;
   font-weight: 300;
   letter-spacing: 1px;
 }
@@ -158,6 +148,7 @@ body {
 }
 
 .price-box--blue .price-box__dollar {
+  color: #3a9fff;
 }
 
 .price-box__discount--light {
@@ -169,32 +160,33 @@ body {
 .price-box__price {
   margin-top: 3px;
   font-size: 14px;
+  color: #8198ae;
   letter-spacing: 1px;
   margin-bottom: 0;
   font-weight: 300;
+  /* text-decoration: line-through; */
 }
 
 .price-box__feat {
   margin-top: 30px;
-  font-size: 14px;
-  color: #8198ae;
+  font-size: 16px;
 }
 
 .price-box__list {
-  text-align: left;
-  padding-left: 30px;
+  /* text-align: left;
+  padding-left: 30px; */
   margin: 0;
   list-style: none;
 }
 
 .price-box__list-el {
-  position: relative;
+  position: relativ
   margin-bottom: 8px;
   font-weight: 300;
 }
 
 .price-box__list-el:before {
-  content: "✓";
+  content: "";
   position: absolute;
   left: -25px;
   font-size: 18px;
@@ -218,6 +210,14 @@ body {
   transform: scale(1.05, 1.05);
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
 }
+
+
+/* .justify_first {
+  padding-bottom: 8px;
+}
+.justify_second {
+  padding-bottom: 42px;
+} */
 
 .btn {
   background-color: #3a9fff;
@@ -480,7 +480,7 @@ body {
 .header__img {
   display: inline-block;
   vertical-align: middle;
-  height: 40px;
+  height: 30px;
 }
 
 .header__logo,
@@ -601,6 +601,9 @@ body {
   color: #8a3aff;
 }
 
+.contacts img {
+  height: 30px;
+}
 .contacts_title-ag {
   margin: 0;
   margin-left: 0px;
@@ -731,6 +734,9 @@ body {
   background-color: #1f4467;
   padding: 40px 0;
 }
+.footer img {
+  height: 30px;
+}
 
 .footer__title {
   font-size: 18px;
@@ -805,6 +811,14 @@ body {
   }
 }
 
+  .justify_second {
+    padding-bottom: 20px;
+  }
+
+  .justify_third {
+    padding-bottom: 15px;
+  }
+
 @media screen and (max-width: 991px) {
   .price-box {
     padding: 0px 10px;
@@ -818,6 +832,13 @@ body {
   .item__content {
     height: auto;
   }
+
+  .justify_first {
+    padding-bottom: 22px;
+  }
+  .justify_second {
+    padding-bottom: 55px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -828,6 +849,15 @@ body {
     padding: 0px 35px;
     margin-bottom: 50px;
   }
+
+
+  /* main-wrapper */
+
+  .main-wrapper img {
+    height: 200px;
+    width: 100%;
+  }
+
   .site__img {
     width: 100%;
   }
@@ -867,10 +897,6 @@ body {
   .price-box {
     padding: 0px 20px;
   }
-
-  /* .price-box__center {
-    margin-bottom: 100px; 
-  } */
   .carousel-control__img {
     width: 20px;
   }
@@ -880,15 +906,18 @@ body {
   .carousel-control.right {
     right: -5px;
   }
-  .partner {
+  .parter {
     width: 100%;
   }
   .footer {
     padding: 15px 0;
   }
   .footer__img {
-    width: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
   }
+
   .footer__title {
     font-size: 16px;
     margin-left: 5px;
@@ -953,7 +982,7 @@ body {
     padding: 8px 8px;
   }
   .btn--width {
-    width: 100px;
+    width: 200px;
   }
   .career_title {
     font-size: 18px;
@@ -977,3 +1006,4 @@ body {
     float: none;
   }
 }
+ b                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

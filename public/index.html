@@ -1,47 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
+
   <head>
-    <meta charset="utf-8">
-     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="https://image.ibb.co/fOur3b/favicon.png"/>
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/7.2.3/firebase-app.js"></script>
+        <!-- include only the Firebase features as you need -->
+        <script defer src="/__/firebase/7.2.3/firebase-auth.js"></script>
+        <script defer src="/__/firebase/7.2.3/firebase-database.js"></script>
+        <script defer src="/__/firebase/7.2.3/firebase-messaging.js"></script>
+        <script defer src="/__/firebase/7.2.3/firebase-storage.js"></script>
+        <!-- initialize the SDK after all desired features are loaded -->
+        <script defer src="/__/firebase/init.js"></script>
+      <link href="stylesheet.css" rel="stylesheet" type="text/css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+
+    <!--js組み込み  -->
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png"/>
     <meta name="theme-color" content="#1885ed">
-    <title>受託開発</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.2.3/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.2.3/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.2.3/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.2.3/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.2.3/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
-    <!-- <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style> -->
-  </head>
-  <body>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+      <title>1受託開発</title>
+    </head>
     
+
+  <body>
       <header class="header">
         <div class="container header__container">
-      <div class="header__logo"><img class="header__img" src="/public/images/popteam logo black.png"></div> 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> 
-                  <span class="sr-only">Toggle navigation</span> 
+      <div class="header__logo"><img class="header__img" src="images/popteam logo black.png"> </div> 
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -61,26 +51,31 @@
         </div>
           </div>
       </header>
+
+      <!-- 問題の場所 -->
       
       <!-- <div class="sect sect--padding-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-            <div class="site">
-              <h1 class="site__title">Fast paced way to grow your business</h1>
-              <h2 class="site__subtitle">Manage analytics like a boss</h2>
-              <div class="site__box-link">
-                <a class="btn btn--width" href="">Pricing</a>
-                <a class="btn btn--revert btn--width" href="">Contact</a>
-              </div>
-              <img class="site__img" src="https://image.ibb.co/c7grYb/image3015.png">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+          <div class="site">
+            <h1 class="site__title">システムの受託開発ならpopteamにお任せください</h1>
+            <h2 class="site__subtitle">どんな業種・業界で使われるシステムでも高度な技術力で構築するシステム開発会社です。</h2>
+            <div class="site__box-link">
+              <a class="btn btn--width" href="">Pricing</a>
+              <a class="btn btn--revert btn--width" href="">Contact</a>
             </div>
-            </div>
-            </div>
+            <img class="site__img" src="images/popteamwrap.jpeg">
           </div>
-        </div> -->
-      
-      
+          </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="main-wrapper">
+          <img src="images/popteamwrap.jpeg">
+      </div>
+       -->
       <div class="sect sect--padding-bottom">
       <div class="container">
       <div class="row row--center">
@@ -89,11 +84,7 @@
         </h1>
         <h2 class="row__sub">システム開発について、業界的に難しそう、どうやって伝えたらいいかわからない、予算感が分からないなど。お困りではありませんか？</h2>
       </div>
-
-      <!-- 問題のコンテンツ -->
-      <div class="row row--center row--margin clearfix">
-      <!-- <div class="parents"> -->
-      <!-- first -->
+      <div class="row row--center row--margin">
         <div class="col-md-4 col-sm-4 price-box price-box--purple">
           <div class="price-box__wrap">
             <div class="price-box__img"></div>
@@ -101,25 +92,27 @@
               SERVICE 01
             </h1>
             <p class="price-box__people">
-              システム保全のスピードや対応力に問題がある企業様、ぜひご連絡ください。
-            </p>
-            <!-- <h2 class="price-box__discount">
-              <span class="price-box__dollar">$</span>49<span class="price-box__discount--light">/mo</span>
-            </h2> -->
+                システム保全のスピードや対応力に問題がある企業様、ぜひご連絡ください。
+           </p>
+            <h2 class="price-box__discount">
+              <!-- <span class="price-box__dollar">$</span>49<span class="price-box__discount--light">/mo</span> -->
+            </h2>
             <h3 class="price-box__price">
-              他社で開発したシステムもpopteamで保守・改修可能です（全国対応可）
+                他社で開発したシステムもpopteamで保守・改修可能です（全国対応可）
+    
             </h3>
-            <p class="price-box__feat">
-                他社で断られてしまったシステムの保守もぜひ一度popteamにご相談ください。他社で開発されたシステムの保守対応をしてくれる開発会社は中々ありませんが、popteamでは他社開発のシステムの保守実績も多数あります。関東以外のエリアのお客様もいらっしゃいますのでお気軽にお問い合わせください。
-            </p>
-            <!-- <ul class="price-box__list"> -->
-              <!-- <li class="price-box__list-el">1 License</li>
-              <li class="price-box__list-el">24h helpcenter</li>
-              <li class="price-box__list-el">No tasks limit</li>
-              <li class="price-box__list-el">No contractors limit </li>
-            </ul> -->
+            <!-- <p class="price-box__feat">
+              Features
+            </p> -->
+            <div class="price-box__list">
+              <p class="justify_first">
+                他社で断られてしまったシステムの保守もぜひ一度popteamにご相談ください。
+                他社で開発されたシステムの保守対応をしてくれる開発会社は中々ありませんが、popteamでは他社開発のシステムの保守実績も多数あります。
+                関東以外のエリアのお客様もいらっしゃいますのでお気軽にお問い合わせください。
+              </p>
+            </div>
              <div class="price-box__btn">
-            <a class="btn btn--purple btn--width">お申し込み</a>
+            <a class="btn btn--purple btn--width">申し込み</a>
           </div>
         </div>
         </div>
@@ -135,22 +128,27 @@
             </p>
             <!-- <h2 class="price-box__discount">
             <span class="price-box__dollar">$</span>149<span class="price-box__discount--light">/mo</span>
-            </h2> -->
-            <h3 class="price-box__price">
-              生産性見える化システムのご提案
-            </h3>
+            </h2>
+             <h3 class="price-box__price">
+              $225/mo
+            </h3> 
             <p class="price-box__feat">
-                従業員の生産性を向上させて残業を削減するためには従業員ごとの生産性を見える化することが必要です。
-                このシステムがなければpopteamが自社の従業員の意識を向上させ、残業ゼロを実現することはできませんでした。
+              Features
+            </p>  -->
+            <h3 class="price-box__price">
+                生産性見える化システムのご提案
+              </h3> 
+            <div class="price-box__list">
+              <p class="justify_second">
+                popteamではお客様のご要望をヒアリングさせていただき、オーダーメイドでニーズに合わせたシステムを構築します。
+                基幹系業務システムからポータルサイト等のインターネット系システムまで、既存のパッケージシステムでは対応できないきめ細かな対応を行います。
+                関東以外のエリアのお客様もいらっしゃいますのでお気軽にお問い合わせください。
+                
+    
             </p>
-            <!-- <ul class="price-box__list">
-              <li class="price-box__list-el">1 License</li>
-              <li class="price-box__list-el">24h helpcenter</li>
-              <li class="price-box__list-el">No tasks limit</li>
-              <li class="price-box__list-el">No contractors limit </li>
-            </ul> -->
+            </div>
             <div class="price-box__btn">
-            <a class="btn btn--violet btn--width">お申し込み</a>
+            <a class="btn btn--violet btn--width">申し込み</a>
           </div>
         </div>
         </div>
@@ -165,36 +163,116 @@
             <p class="price-box__people">
                 Webシステムのことならpopteamにご相談ください
             </p>
-            <!-- <h2 class="price-box__discount">
-            <span class="price-box__dollar">$</span>399<span class="price-box__discount--light">/mo</span>
-            </h2> -->
+            <h2 class="price-box__discount">
+            <!-- <span class="price-box__dollar">$</span>399<span class="price-box__discount--light">/mo</span> -->
+            </h2>
             <h3 class="price-box__price">
                 新規Webシステム構築サービス（全国対応可）
             </h3>
-            <p class="price-box__feat">
-                popteamではお客様のご要望をヒアリングさせていただき、オーダーメイドでニーズに合わせたシステムを構築します。基幹系業務システムからポータルサイト等のインターネット系システムまで、既存のパッケージシステムでは対応できないきめ細かな対応を行います。関東以外のエリアのお客様もいらっしゃいますのでお気軽にお問い合わせください。
-            </p>
-            <!-- <ul class="price-box__list">
-              <li class="price-box__list-el">1 License</li>
-              <li class="price-box__list-el">24h helpcenter</li>
-              <li class="price-box__list-el">No tasks limit</li>
-              <li class="price-box__list-el">No contractors limit </li>
-            </ul> -->
+            <!-- <p class="price-box__feat">
+              Features
+            </p> -->
+            <div class="price-box__list">
+                <p class="justify_third">
+                    popteamではお客様のご要望をヒアリングさせていただき、オーダーメイドでニーズに合わせたシステムを構築します。
+                    基幹系業務システムからポータルサイト等のインターネット系システムまで、既存のパッケージシステムでは対応できないきめ細かな対応を行います。
+                    関東以外のエリアのお客様もいらっしゃいますのでお気軽にお問い合わせください
+                </p>
+              
+            </div>
           <div class="price-box__btn">
-            <a class="btn btn--blue btn--width">お申し込み</a>
+            <a class="btn btn--blue btn--width">申し込み</a>
           </div>
         </div>
         </div>
         
         
-      </div>
-      </div>
-      </div>
-      <!-- </div> -->
       
-      <!-- SNSアイコンリスト -->
+      </div>
+      </div>
+      </div>
+      
+      
+      <!-- <div class="sect sect--white">
+      <div class="container">
+      <div class="row">
+        <h1 class="row__title">
+          Success Stories
+        </h1>
+        <h2 class="row__sub">Companies you <span class="row__sub--light">(will)</span> propably know</h2>
+      </div>
+      <div class="row row--margin row--text-center">
+        <div class="col-md-8 col-sm-10 col-xs-12 row__carousel">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!-- <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+       -->
+        <!-- Wrapper for slides -->
+        <!-- <div class="carousel-inner">
+          <div class="item active">
+            <div class="item__content">
+            <img class="item__img" src="https://cdn.worldvectorlogo.com/logos/slack-1.svg" alt="Slack"><span class="item__name">slack</span>
+            <p class="item__description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+            </p>
+              </div>
+            <div class="item__avatar"></div>
+            <p class="item__people">Josh Doe</p>
+        <p class="item__occupation">Ceo of Google</p>
+          </div>
+          
+              <div class="item">
+            <div class="item__content">
+            <img class="item__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Google-favicon-2015.png/150px-Google-favicon-2015.png" alt="Google"><span class="item__name">google</span>
+            <p class="item__description">
+               Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+            </p>
+              </div>
+            <div class="item__avatar"></div>
+           <p class="item__people">Mary Tompson</p>
+        <p class="item__occupation">Ceo of Dribbble</a>
+          </div>
+          
+      <div class="item">
+            <div class="item__content">
+            <img class="item__img" src="https://www.hrexaminer.com/wp-content/uploads/2016/10/2016-10-11-hrexaminer-stackoverflow-6-xxl-sq-250px.png" alt="Stackoverflow"><span class="item__name">stackoverflow</span>
+            <p class="item__description">
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+            </p>
+              </div>
+            <div class="item__avatar"></div>
+            <p class="item__people">Andrew Palmer</p>
+        <p class="item__occupation">Ceo of Slack</a>
+          </div>
+      
+        </div>
+       -->
+        <!-- Left and right controls -->
+        <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <img class="carousel-control__img" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMxLjQ5NCAzMS40OTQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMxLjQ5NCAzMS40OTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPHBhdGggZD0iTTEwLjI3Myw1LjAwOWMwLjQ0NC0wLjQ0NCwxLjE0My0wLjQ0NCwxLjU4NywwYzAuNDI5LDAuNDI5LDAuNDI5LDEuMTQzLDAsMS41NzFsLTguMDQ3LDguMDQ3aDI2LjU1NCAgYzAuNjE5LDAsMS4xMjcsMC40OTIsMS4xMjcsMS4xMTFjMCwwLjYxOS0wLjUwOCwxLjEyNy0xLjEyNywxLjEyN0gzLjgxM2w4LjA0Nyw4LjAzMmMwLjQyOSwwLjQ0NCwwLjQyOSwxLjE1OSwwLDEuNTg3ICBjLTAuNDQ0LDAuNDQ0LTEuMTQzLDAuNDQ0LTEuNTg3LDBsLTkuOTUyLTkuOTUyYy0wLjQyOS0wLjQyOS0wLjQyOS0xLjE0MywwLTEuNTcxTDEwLjI3Myw1LjAwOXoiIGZpbGw9IiM2Zjc5ZmYiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+      
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <img class="carousel-control__img" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMxLjQ5IDMxLjQ5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMS40OSAzMS40OTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIzMnB4IiBoZWlnaHQ9IjMycHgiPgo8cGF0aCBkPSJNMjEuMjA1LDUuMDA3Yy0wLjQyOS0wLjQ0NC0xLjE0My0wLjQ0NC0xLjU4NywwYy0wLjQyOSwwLjQyOS0wLjQyOSwxLjE0MywwLDEuNTcxbDguMDQ3LDguMDQ3SDEuMTExICBDMC40OTIsMTQuNjI2LDAsMTUuMTE4LDAsMTUuNzM3YzAsMC42MTksMC40OTIsMS4xMjcsMS4xMTEsMS4xMjdoMjYuNTU0bC04LjA0Nyw4LjAzMmMtMC40MjksMC40NDQtMC40MjksMS4xNTksMCwxLjU4NyAgYzAuNDQ0LDAuNDQ0LDEuMTU5LDAuNDQ0LDEuNTg3LDBsOS45NTItOS45NTJjMC40NDQtMC40MjksMC40NDQtMS4xNDMsMC0xLjU3MUwyMS4yMDUsNS4wMDd6IiBmaWxsPSIjNmY3OWZmIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+       
+        </a>
+      </div>
+          
+        </div>
         
-  <div class="sect sect--white sect--no-padding">
+        
+      
+      </div>
+      </div>
+      </div> --> 
+
+
+<!--       
+      <div class="sect sect--white sect--no-padding">
       <div class="container">
         <div class="row row--center">
           <div class="col-md-3 col-xs-6 col-sm-6 partner">
@@ -251,10 +329,8 @@
           </div>
         </div>
       </div>    
-      </div>
+      </div> -->
       
-
-      <!-- ブログリスト -->
       <div class="sect sect--white">
       <div class="container">
         <div class="row">
@@ -265,13 +341,11 @@
         </div>
         
         <div class="row row--margin">
-
-
           <div class="col-md-6 article-pre__col">
             <a href="#" class="article-pre ">
               <div class="article-pre__img article-pre__img--first"></div>
               <h2 class="article-pre__info">
-                <span class="article-pre__aut">popteam編集部</span> <span class="article-pre__date"> 2019年11月7日</span>
+                <span class="article-pre__cat">Protips • </span><span class="article-pre__aut"> popteam編集部</span> <span class="article-pre__date"> 2019年11月8日</span>
               </h2>
               <h1 class="article-pre__title">採用情報について<span class="article-pre__arrow--purple"> →</span></h1>
             </a>
@@ -281,10 +355,9 @@
             <a href="#" class="article-pre ">
               <div class="article-pre__img article-pre__img--second"></div>
               <h2 class="article-pre__info">
-              <span class="article-pre__aut">popteam編集部</span> <span class="article-pre__date"> 2019年11月7日</span>
-
+                <span class="article-pre__cat">Pricing • </span><span class="article-pre__aut"> popteam編集部</span> <span class="article-pre__date"> 2019年11月8日</span>
               </h2>
-              <h1 class="article-pre__title">システム開発部の技術について<span class="article-pre__arrow--purple">→</span></h1>
+              <h1 class="article-pre__title">会社を設立いたしました。<span class="article-pre__arrow--purple">→</span></h1>
             </a>
           </div>    
        </div>
@@ -293,26 +366,25 @@
             <a href="#" class="article-pre ">
               <div class="article-pre__img article-pre__img--fourth"></div>
               <h2 class="article-pre__info">
-                <span class="article-pre__aut"> popteam編集部</span> <span class="article-pre__date"> 2019年11月7日</span>
+                <span class="article-pre__cat">Success Stories • </span><span class="article-pre__aut"> popteam編集部</span> <span class="article-pre__date"> 11月11日(月)</span>
               </h2>
-              <h1 class="article-pre__title">会社を設立いたしました。<span class="article-pre__arrow--purple"> →</span></h1>
+              <h1 class="article-pre__title">インターン生採用について<span class="article-pre__arrow--purple"> →</span></h1>
             </a>
           </div>
           
-              <!-- <div class="col-md-6 article-pre__col">
+              <div class="col-md-6 article-pre__col">
             <a href="#" class="article-pre ">
               <div class="article-pre__img article-pre__img--third"></div>
               <h2 class="article-pre__info">
-                <span class="article-pre__cat">Protips • </span><span class="article-pre__aut"> by Ann Timothy</span> <span class="article-pre__date"> - 5 mins read</span>
+                <span class="article-pre__cat">Protips • </span><span class="article-pre__aut"> popteam編集部</span> <span class="article-pre__date"> 11月11日(月)</span>
               </h2>
-              <h1 class="article-pre__title">How to improve analytics using few tools in Bricks<span class="article-pre__arrow--purple"> →</span></h1>
+              <h1 class="article-pre__title">受託開発始めました<span class="article-pre__arrow--purple"> →</span></h1>
             </a>
-          </div>      -->
+          </div>     
         </div>
       </div>
       </div>
-
-      <!-- お問い合わせフォーム --> 
+      
       <div class="sect sect--padding-bottom">
         <div class="container">
           <div class="row">
@@ -324,16 +396,15 @@
             <div class="col-md-1"></div>
             <div class="col-md-4">
               <div class="contacts">
-                <a href="#" class="contacts__link"><img src="https://image.ibb.co/kcVou6/path3000.png"><h1 class="contacts_title-ag">popteam</h1></a>
+                <a href="#" class="contacts__link"><img src="images/popteam logo black.png"><a>
                 <p class="contacts__address">
                     160-0002 東京都新宿区四谷坂町1-19
                 </p>
                 <p class="contacts__info">
-                  <!-- tel. <a href="#" class="contacts__info-link">+1 234 567 890</a> -->
+                  tel. <a href="#" class="contacts__info-link">+1 234 567 890</a>
                 </p>
                 <p class="contacts__info">
-                  お問い合わせ窓口<a href="#"class="contacts__info-link">Email:support@pop-team.com
-                    </a>
+                  m. <a href="#"class="contacts__info-link">Email:support@pop-team.com</a>
                 </p>
               </div>
             </div>
@@ -341,7 +412,7 @@
               <form id="contact" class="form">
                 <div class="form-group">
                   <select class="form__field form__select">
-                    <option selected value>お問い合わせ内容</option>
+                    <option selected value>お問い合わせ内容*</option>
                     <option value=1>開発依頼について</option>
                     <option value=2>採用について</option>
                     <option value=3>その他</option>
@@ -350,24 +421,24 @@
                   </div>
                  <div class="form-group">
                    <div class="form__field--half">
-                  <input type="text" placeholder="姓" class="form__field form__text"></input>
+                  <input type="text" placeholder="Name*" class="form__field form__text"></input>
                    </div>
                 <div class="form__field--half">
-                <input type="text" placeholder="名" class="form__field form__text"></input>
+                <input type="text" placeholder="Surname" class="form__field form__text"></input>
                 </div>
                 </div>
             
               <div class="form-group">
                 <div class="form__field--half">
-                  <input type="text" placeholder="メールアドレス" class="form__field form__text"></input>
+                  <input type="text" placeholder="Email address*" class="form__field form__text"></input>
                 </div>
                <div class="form__field--half">
-                <input type="text" placeholder="電話番号" class="form__field form__text"></input>
+                <input type="text" placeholder="Phone number" class="form__field form__text"></input>
           </div>
                 </div>
         
                 <div class="form-group">
-                  <textarea type="text" placeholder="具体的なお問い合わせ内容" class="form__field form__textarea"></textarea>
+                  <textarea type="text" placeholder="Your messsage*" class="form__field form__textarea"></textarea>
                   <button class="btn btn--up btn--width" type="submit">送信</button>
                 </div>
               </form>
@@ -377,13 +448,27 @@
         </div>
       </div>
       
-    
+      <div class="sect sect--violet ">
+        <img src="https://image.ibb.co/fWyVtb/path3762.png" class="career-img">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="career_title">受託開発はpopteamにお任せください！</h1>
+              <h1 class="career_sub">業務やシステム開発に関することは、どんなことでもお問い合わせください。</h1>
+              <a href="#" class="btn btn--white btn--width_2">お問い合わせはこちら</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
       
       <footer class="footer">
         <div class="container">
           <div class="row">
             <div class="col-md-2 col-xs-6">
-             <img class="footer__img" src="https://image.ibb.co/kcVou6/path3000.png"> <h1 class="footer__title">Bricks<span class="footer__light">.io</span></h1></div>
+             <img class="footer__img" src="images/popteam logo black.png"> 
+             <!-- <h1 class="footer__title">Bricks<span class="footer__light">.io</span></h1> -->
+            </div>
             <div class="col-md-10 col-xs-6">
               <div class="footer__social">
                 <a href="#" class="footer__social-l">
@@ -405,12 +490,9 @@
           </div>
         </div>
       </footer>
-      
-
-       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  
-  </body>
+      <script type="text/javascript" src="index.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </body>
 </html>

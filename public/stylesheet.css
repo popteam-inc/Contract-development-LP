@@ -16,6 +16,55 @@ body {
   background-position: center;
 }
 
+
+  /* main-wrapper */
+  section {
+    background: #ccb0ff;
+    height: 500px;
+    position: relative;
+    z-index: 3;
+    
+}
+
+section p {
+    font-size: 13px;
+    line-height: 10px;
+    background:  url(https://media.giphy.com/media/y3wBjXMffuFjy/giphy.gif) no-repeat;
+/*   Artwork by Xaviera López */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0) ;
+    font-weight: 900;
+    margin: 0;
+    mix-blend-mode: darken;
+    height: 500px;
+    z-index: 2;
+}
+
+.tagline {
+  position: absolute; 
+  /* left: 0;
+  right: 0;
+  margin: 0 auto; */
+  top: 320px;
+  z-index: 30;
+  /* text-align: center;
+  display: block; */
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  font-weight: 500;
+}
+ section h3 {
+   text-align: center; 
+} 
+
+
 /* colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
 .sect {
   padding: 90px 0;
@@ -67,6 +116,9 @@ body {
   margin: 0px;
   color: #8198ae;
 }
+
+
+
 
 .price-box {
   padding: 0px 25px;
@@ -180,7 +232,7 @@ body {
 }
 
 .price-box__list-el {
-  position: relativ
+  position: relative;
   margin-bottom: 8px;
   font-weight: 300;
 }
@@ -557,11 +609,11 @@ body {
 }
 
 .article-pre__img--first {
-  background-image: url(https://cdn.dribbble.com/users/18730/screenshots/2182635/newshot.png);
+  background-image: url(images/dizitalpanda2.png);
 }
 
 .article-pre__img--second {
-  background-image: url(https://image.ibb.co/cYsvbw/dribbble.jpg);
+  background-image: url(https://cdn.dribbble.com/users/18730/screenshots/2182635/newshot.png);
 }
 
 .article-pre__img--third {
@@ -738,6 +790,10 @@ body {
   height: 30px;
 }
 
+.logo_padding {
+  padding-left: 15px;
+}
+
 .footer__title {
   font-size: 18px;
   margin: 0;
@@ -850,13 +906,7 @@ body {
     margin-bottom: 50px;
   }
 
-
-  /* main-wrapper */
-
-  .main-wrapper img {
-    height: 200px;
-    width: 100%;
-  }
+  
 
   .site__img {
     width: 100%;
